@@ -3,6 +3,9 @@ on:
   push:
     branches:
     - master
+    paths:
+    - 'FunctionApp1/**'
+    - 'Common/**'
 env:
   AZURE_FUNCTIONAPP_NAME: FunctionApp120250404163102
   AZURE_FUNCTIONAPP_PACKAGE_PATH: FunctionApp1\published
