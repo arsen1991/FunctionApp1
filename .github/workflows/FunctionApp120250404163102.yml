@@ -51,7 +51,7 @@ jobs:
           name: functionapp
           path: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
       - name: Azure Login
-        uses: azure/login@v2
+        uses: azure/login@v1
         with:
            creds: ${{ secrets.FunctionApp120250404163102_SPN }}
       - name: Deploy to Azure Function App
