@@ -51,7 +51,9 @@ jobs:
       - name: Azure Login
         uses: azure/login@v2
         with:
-          creds: ${{ secrets.FunctionApp120250403182747_SPN }}
+          client-id: ${{ secrets.FunctionApp120250403182747_ClientId }}
+          tenant-id: ${{ secrets.FunctionApp120250403182747_TenantId }}
+          subscription-id: ${{ secrets.FunctionApp120250403182747_SubscriptionId }}
           enable-AzPSSession: true
       - name: Deploy to Azure Function App
         uses: Azure/functions-action@v1
