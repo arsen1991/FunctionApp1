@@ -5,6 +5,7 @@ on:
       - master
     paths:
       - 'FunctionApp1/**'
+      - 'Common/**'
 env:
   AZURE_FUNCTIONAPP_NAME: FunctionApp120250403182747
   AZURE_FUNCTIONAPP_PACKAGE_PATH: FunctionApp1\published
