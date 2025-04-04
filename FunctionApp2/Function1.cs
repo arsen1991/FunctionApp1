@@ -19,6 +19,11 @@ namespace FunctionApp2
         {
             _logger.LogInformation("C# HTTP trigger function processed a request.");
 
+            var sharedObject = new Common.SharedObject
+            {
+                Name = "FunctionApp2"
+            };
+
             var response = req.CreateResponse(HttpStatusCode.OK);
             response.Headers.Add("Content-Type", "text/plain; charset=utf-8");
 
