@@ -53,7 +53,6 @@ jobs:
         with:
           creds: ${{ secrets.FunctionApp120250403182747_SPN }}
           enable-AzPSSession: true
-          environment: 'dev'
       - name: Deploy to Azure Function App
         uses: Azure/functions-action@v1
         with:
