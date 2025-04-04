@@ -16,6 +16,7 @@ env:
 
 jobs:
   build:
+    environment: dev
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
@@ -41,6 +42,7 @@ jobs:
           name: functionapp
           path: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
   deploy:
+    environment: dev
     runs-on: windows-latest
     needs: build
     steps:
