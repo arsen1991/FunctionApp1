@@ -27,7 +27,7 @@ namespace FunctionApp2
             var response = req.CreateResponse(HttpStatusCode.OK);
             response.Headers.Add("Content-Type", "text/plain; charset=utf-8");
 
-            response.WriteString("Welcome to Azure Functions! Minor");
+            response.WriteString("Welcome to Azure Functions!");
 
             return response;
         }
