@@ -3,6 +3,9 @@ on:
   push:
     branches:
     - master
+    paths:
+    - 'FunctionApp2/**'
+    - 'Common/**'     
 env:
   AZURE_FUNCTIONAPP_NAME: FunctionApp220250407111903
   AZURE_FUNCTIONAPP_PACKAGE_PATH: FunctionApp2\published
@@ -12,6 +15,7 @@ env:
   DOTNET_CORE_VERSION_INPROC: 6.0.x
 jobs:
   build:
+    environment: dev                    
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v4
