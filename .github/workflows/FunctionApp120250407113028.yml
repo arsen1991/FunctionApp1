@@ -25,7 +25,7 @@ jobs:
         include-prerelease: True
         dotnet-version: ${{ env.DOTNET_CORE_VERSION }}
     - name: Setup .NET Core (for inproc extensions)
-      uses: actions/setup-dotnetv4
+      uses: actions/setup-dotnet@v1
       with:
         dotnet-version: ${{ env.DOTNET_CORE_VERSION_INPROC }}
         include-prerelease: True
