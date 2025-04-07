@@ -8,7 +8,7 @@
 
         public string GetName()
         {
-            return Name;
+            return Name.ToLower();
         }
 
         public void SetName(string name)
